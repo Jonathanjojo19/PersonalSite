@@ -1,0 +1,87 @@
+body {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;
+}
+
+body::-webkit-scrollbar { width: 0 !important }
+
+.dark-bg {
+	background-color: #000011;
+}
+
+.light-bg {
+	background-color: #e6e6e6;
+}
+
+.light-blue-text {
+	font-family: 'Avenir LT Std 35 Light';
+	color: #9EA8C7;
+}
+
+.dark-grey-text {
+	font-family: 'Avenir LT Std 35 Light';
+	color: #3E4456;
+}
+
+.dark-blue-text {
+	font-family: 'Avenir LT Std 35 Light';
+	color: #000011;
+}
+
+.white-text {
+	font-family: 'Avenir LT Std 35 Light';
+	color: #e6e6e6;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.bolder {
+	font-weight: bolder;
+}
+
+.mainTitle {
+	font-weight: bolder;
+	font-size: 3.5em;
+}
+
+@font-face {
+	font-family: 'Avenir LT Std 35 Light';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Avenir LT Std 35 Light'),
+		url('./fonts/AvenirLTStd-Medium.woff') format('woff');
+}
+  
+@font-face {
+	font-family: 'Avenir LT Std 65 Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Avenir LT Std 65 Medium'),
+		url('./fonts/AvenirLTStd-Medium.woff') format('woff');
+}
+
+.full {
+	min-width: 100vw;
+	min-height: 100vh;
+}
+
+.h90 {
+	min-width: 100vw;
+	min-height: 90vh;
+}
+
+.h50 {
+	min-width: 100vw;
+	min-height: 50vh;
+}
+
+.title {
+	letter-spacing: 2px;
+	text-align: center;
+}

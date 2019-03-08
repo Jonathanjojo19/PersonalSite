@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Link from "../../components/Link";
+import RLink from "../../components/Link";
 
 const Wrapper = styled.div`
 	padding: 5vh 0vw 40vh 5vw;
@@ -18,8 +18,8 @@ const NotFound = () => (
 			</h1>
 			<h2 className="white-text">You seem like a hefty wanderer..</h2>
 			<span className="light-blue-text">And a lost one too, come {" "}
-			<Link
-				target=".."
+			<RLink
+				target="../"
 				label="here"
 			/>
 			</span>

@@ -10,6 +10,7 @@
     "react": "^16.8.3",
     "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.8.3",
+    "react-loading-screen": "0.0.17",
     "react-router-dom": "^4.3.1",
     "react-router-page-transition-v2": "^2.0.0",
     "react-sanfona": "^1.4.0",

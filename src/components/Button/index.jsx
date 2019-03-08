@@ -14,10 +14,6 @@ const StyledButton = styled.button`
 `;
 
 class Button extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <StyledButton dark={this.props.dark}>

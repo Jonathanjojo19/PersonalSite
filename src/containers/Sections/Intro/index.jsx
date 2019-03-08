@@ -4,21 +4,21 @@ import Wrapper from "../../../components/SectionWrapper";
 import { Link } from "react-scroll";
 import Typing from 'react-typing-animation';
 
-class Intro extends React.Component {
+class Intro extends React.Component {    
     render() {
         return (
-            <Wrapper className="dark-bg h90" style={{ marginTop: -20 }}>
-                <div id="intro">
+            <Wrapper className="dark-bg h90" style={{ marginTop: -20 }} id="intro">
+                <div>
                     <h5 className="white-text title">HELLO, ARE YOU LOOKING FOR ME? I AM</h5>
-                    <Typing speed='80' hideCursor="true">
+                    {this.props.loading || <Typing speed="60" startDelay="100" hideCursor="true"> 
                         <h1 className="light-blue-text mainTitle" style={{ marginBottom: 30, marginTop: 20 }}>
                             Jonathan Christopher Jakub
                         </h1>
-                    </Typing>
+                    </Typing>}
                     <h6 className="white-text">
-                        a <span className="bold">Full-Stack Developer</span> based in Jakarta, Indonesia interested in 
-                        <span className="bold"> Software Engineering</span> and <span className="bold">Machine Learning</span>. 
-                        Currently a Computer Science student at The University of Indonesia.
+                        I want to be a <b>Full-Stack Developer</b> and I am interested in 
+                        <b> Software Engineering</b> and <b>Machine Learning</b>.<br></br>
+                        Currently a Computer Science student at The University of Indonesia, I still have a lot to learn..
                     </h6>
                     <div style={{ marginTop: 30, marginBottom:100 }}>
                         <Button dark>
@@ -37,6 +37,7 @@ class Intro extends React.Component {
                                 href="https://docs.google.com/document/d/15w3Yma1BeAfFxDieAPPnKCRk0LqA95TjAo81FhRhXL8/edit?usp=sharing"
                                 style={{textDecoration: "none"}}
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                             <span className="bold dark-blue-text">RESUME</span>
                             </a>

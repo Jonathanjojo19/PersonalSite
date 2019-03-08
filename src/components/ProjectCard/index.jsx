@@ -13,16 +13,12 @@ const StyledCard = styled.div`
     margin: 1em 0.5em;
 `;
 
-const IconWrapper = styled.div`
-    border-radius: 50%;
-    background: ${props => props.dark ? "#000011" : "#9EA8C7"};
-`;
+// const IconWrapper = styled.div`
+//     border-radius: 50%;
+//     background: ${props => props.dark ? "#000011" : "#9EA8C7"};
+// `;
 
 class ProjectCard extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <StyledCard>

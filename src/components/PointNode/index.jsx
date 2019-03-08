@@ -19,10 +19,6 @@ const StyledButton = styled.button`
 `;
 
 class Point extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <StyledButton blue={this.props.blue}>

@@ -3,16 +3,15 @@ import styled from "styled-components";
 
 const StyledFooter = styled.footer`
 	text-align: center;
-	padding-top:1.5em;
+	padding-top:0.5em;
 	padding-bottom:0.1em;
-	font-size:0.7em;
+	whiteSpace: initial;
 `;
 
 const Footer = () => (
 	<StyledFooter>
-		<p className="light-blue-text" style={{whiteSpace: "initial"}}>
-			DEVELOPED BY <span className="bolder">JONATHAN CHRISTOPHER JAKUB</span>
-		</p>
+		<span className="light-blue-text">DEVELOPED BY </span>
+		<span className="white-text bolder"> JONATHAN CHRISTOPHER JAKUB</span>
 	</StyledFooter>
 );
 

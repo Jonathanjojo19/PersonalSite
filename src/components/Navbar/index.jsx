@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import anchors from './anchors';
 import logo from "../../icons/logo.svg";
+import styled from "styled-components";
 
 import {
 	Collapse,
@@ -13,7 +14,19 @@ import {
 	NavLink } from 'reactstrap';
 	
 import { Link } from "react-scroll";
-	
+
+import { Link as RLink } from "react-router-dom";
+
+const RouterLink = styled(RLink)`
+	text-decoration: none;
+	color: inherit;
+
+	&:hover {
+		color: inherit;
+		text-decoration: none;
+	}
+`;
+
 export default class Navs extends React.Component {
 	
 	constructor(props) {
@@ -44,7 +57,7 @@ export default class Navs extends React.Component {
 						to="intro"
 						spy={true}
 						smooth={true}
-						offset={-400}
+						offset={-50}
 						duration={1000}
 					>
 						<img 
@@ -65,7 +78,7 @@ export default class Navs extends React.Component {
 									to={target}
 									spy={true}
 									smooth={true}
-									offset={-125}
+									offset={-50}
 									duration={1000}
 								>
 									<span className="bold"></span>{label}
@@ -73,6 +86,11 @@ export default class Navs extends React.Component {
 								</NavLink>
 							</NavItem>
 						))}
+						<NavItem>
+							<NavLink>
+								<RouterLink to="/dev">COMING SOON</RouterLink>
+							</NavLink>					
+						</NavItem>
 					</Nav>
 				</Collapse>
 			</Navbar>

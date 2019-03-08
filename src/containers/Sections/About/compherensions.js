@@ -6,7 +6,6 @@ const comprehensions = [
     'DESIGN PATTERNS',
     'TDD',
     'CI/CD',
-    'DATA SCIENCE'
 ];
 
 export default comprehensions;

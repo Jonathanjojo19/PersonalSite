@@ -11,6 +11,10 @@ const StyledButton = styled.button`
     padding: 1em 2.5em;
     border: 1px solid ${props => props.dark ? "#9EA8C7" : "#000011"};
     transition: all 0.3s ease-out;
+
+    &::hover {
+        color: red;
+    }
 `;
 
 class Button extends React.Component {

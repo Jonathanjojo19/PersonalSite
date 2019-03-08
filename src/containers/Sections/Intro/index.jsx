@@ -1,17 +1,23 @@
-import React from "react";
 import Button from "../../../components/Button";
+import React from "react";
+import Typing from 'react-typing-animation';
 import Wrapper from "../../../components/SectionWrapper";
 import { Link } from "react-scroll";
-import Typing from 'react-typing-animation';
 
 class Intro extends React.Component {    
     render() {
         return (
-            <Wrapper className="dark-bg h90" style={{ marginTop: -20 }} id="intro">
+            <Wrapper 
+                dark 
+                height="90"
+                align="center"
+                style={{ marginTop: -20 }} 
+                id="intro"
+            >
                 <div>
                     <h5 className="white-text title">HELLO, ARE YOU LOOKING FOR ME? I AM</h5>
-                    {this.props.loading || <Typing speed="60" startDelay="100" hideCursor="true"> 
-                        <h1 className="light-blue-text mainTitle" style={{ marginBottom: 30, marginTop: 20 }}>
+                    {this.props.loading || <Typing speed={20} startDelay={0} hideCursor="true"> 
+                        <h1 className="light-blue-text mainTitle" style={{ marginBottom: 30, marginTop: 20, fontWeight:"bolder" }}>
                             Jonathan Christopher Jakub
                         </h1>
                     </Typing>}
@@ -22,15 +28,15 @@ class Intro extends React.Component {
                     </h6>
                     <div style={{ marginTop: 30, marginBottom:100 }}>
                         <Button dark>
-                        <Link 
-                            to="about"
-                            spy={true}
-                            smooth={true}
-                            offset={-125}
-                            duration={1000}
-                            >
-                            <span className="bold light-blue-text">KNOW MORE</span>
-                        </Link>
+                            <Link 
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                offset={-50}
+                                duration={1000}
+                                >
+                                <span className="bold light-blue-text">KNOW MORE</span>
+                            </Link>
                         </Button>
                         <Button light>
                             <a 
@@ -39,7 +45,7 @@ class Intro extends React.Component {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                            <span className="bold dark-blue-text">RESUME</span>
+                                <span className="bold dark-blue-text">RESUME</span>
                             </a>
                         </Button>                    
                     </div>

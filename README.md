@@ -1,4 +1,10 @@
+# Jonathanjojo Personal Site
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Overview
+
+This is a personal site of me, built with React JS. Feel free to visit it.
 
 ## Available Scripts
 

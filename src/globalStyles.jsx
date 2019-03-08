@@ -17,7 +17,6 @@ export default createGlobalStyle`
   body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
-    // font-weight: normal;
   }
 
   ol, ul {
@@ -45,15 +44,15 @@ export default createGlobalStyle`
   h6,
   p,
   a {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Avenir LT Std 35 Light'
   }
 
   body {
-    background: #E8E2CC;
+    background: #000011;
   }
 
   h1 {
-    font-size: 4em;
+    font-size: 6em;
   }
   h2 {
     font-size: 3em;
@@ -61,8 +60,16 @@ export default createGlobalStyle`
   h3 {
     font-size: 2.5em;
   }
-  p {
+  h4 {
+    font-size: 2em;
+  }
+  h5 {
     font-size: 1.5em;
-    font-weight: normal;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  p {
+    font-size: 0.75em;
   }
 `;

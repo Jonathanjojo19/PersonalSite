@@ -37,8 +37,8 @@ export default class Navs extends React.Component {
 			isOpen: false,
 			paddingStyle: {
 				paddingLeft: '10vw ', 
-				paddingRight: '10vw '
-			}
+				paddingRight: '10vw ',
+			}			
 		};
 	}
 
@@ -63,32 +63,33 @@ export default class Navs extends React.Component {
 						<img 
 							src={logo}
 							alt="Logo"
-							style={{width:46, margin:2}}
+							style={{width:46, marginTop:2, marginBottom:2, marginRight:10}}
 						/>
+						<span class="spaced">Jonathanjojo</span>
 					</Link>
 				</NavbarBrand>
 				<NavbarToggler onClick={this.toggle}></NavbarToggler>
 				<Collapse isOpen={this.state.isOpen} navbar>
 					<Nav className="ml-auto" navbar>
 						{anchors.map(({ label, target }) => (
-							<NavItem>
+							<NavItem style={{marginRight: 10}}>
 								<NavLink href={"#"+target}>
-								<Link
-									activeClass="active"
-									to={target}
-									spy={true}
-									smooth={true}
-									offset={-50}
-									duration={1000}
-								>
-									<span className="bold"></span>{label}
-								</Link>
+									<Link
+										activeClass="active"
+										to={target}
+										spy={true}
+										smooth={true}
+										offset={-50}
+										duration={1000}
+									>
+										<span className="bold spaced">{label}</span>
+									</Link>
 								</NavLink>
 							</NavItem>
 						))}
 						<NavItem>
 							<NavLink>
-								<RouterLink to="/dev">COMING SOON</RouterLink>
+								<RouterLink to="/comingsoon"><span className="spaced">UPCOMING</span></RouterLink>
 							</NavLink>					
 						</NavItem>
 					</Nav>

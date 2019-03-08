@@ -2,19 +2,19 @@ import React from "react";
 import RLink from "../../components/Link";
 import Wrapper from "../../components/SectionWrapper"
 
-const NotFound = () => (
+const ComingSoon = () => (
 	<Wrapper 
 		dark 
 		height="100" 
 		align="left"
-		id="notfound"
+		id="comingsoon"
 	>
 		<div>
 			<h1 className="dark-grey-text" style={{fontSize:100}}>
-				404 <span className="light-blue-text">Page Not Found</span>
+				Under<span className="light-blue-text"><wbr></wbr>Construction</span>
 			</h1>
-			<h2 className="white-text">You seem like a hefty wanderer..</h2>
-			<span className="light-blue-text">And a lost one too, come {" "}
+			<h2 className="white-text" style={{paddingLeft:5}}>Pretty curious, aren't you?</h2>
+			<span className="light-blue-text" style={{paddingLeft:5}}>For now, just explore {" "}
 			<RLink
 				target="../"
 				label="here"
@@ -24,4 +24,4 @@ const NotFound = () => (
 	</Wrapper>
 );
 
-export default NotFound;
+export default ComingSoon;

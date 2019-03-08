@@ -4,7 +4,12 @@ import Wrapper from "../../../components/SectionWrapper";
 class Experiences extends React.Component {
     render() {
         return (
-            <Wrapper className="dark-bg full" id="experiences">
+            <Wrapper 
+                dark 
+                height="100" 
+                align="center"
+                id="experiences"
+            >
                 <div>
                     <h5 className="white-text title">ACHIEVEMENTS & EXPERIENCES</h5>
                 </div>

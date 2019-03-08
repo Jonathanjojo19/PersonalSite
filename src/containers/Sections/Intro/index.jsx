@@ -34,7 +34,7 @@ class Intro extends React.Component {
                         </Button>
                         <Button light>
                             <a 
-                                href="https://docs.google.com/document/d/15w3Yma1BeAfFxDieAPPnKCRk0LqA95TjAo81FhRhXL8/edit?usp=sharing"
+                                href="https://drive.google.com/uc?export=download&id=1IZhxTWkHtbGeQ-XGn-F-8VG2poMb_TEt"
                                 style={{textDecoration: "none"}}
                                 target="_blank"
                                 rel="noopener noreferrer"

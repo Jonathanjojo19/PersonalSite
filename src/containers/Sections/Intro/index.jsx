@@ -45,7 +45,7 @@ class Intro extends React.Component {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <span className="bold dark-blue-text">RESUME</span>
+                                <span className="bold dark-blue-text">SEE RESUME</span>
                             </a>
                         </Button>                    
                     </div>

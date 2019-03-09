@@ -14,7 +14,9 @@ class Contacts extends React.Component {
                     <h4 className="dark-blue-text title">LET'S GET IN TOUCH WITH ME!</h4>
                     <h1 className="dark-blue-text bolder" style={{whiteSpace: "initial"}}>
                         jonathan<wbr/>christopher<wbr/>1199<wbr/>@gmail.com
-                    </h1>                   
+                    </h1>
+                    <br/>
+                    <h6 className="line-wrapped">linkedin gitlab phone</h6>      
                 </div>
             </Wrapper>
         );

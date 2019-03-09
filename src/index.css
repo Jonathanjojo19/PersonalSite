@@ -12,6 +12,10 @@ body {
 	background-color: #000011;
 }
 
+.nav-link {
+	transition: 0.2s all ease-in-out;
+}
+
 body::-webkit-scrollbar { 
 	width: 0 !important;
 	height: 0 !important;
@@ -99,6 +103,32 @@ body::-webkit-scrollbar {
 
 .spaced {
 	letter-spacing: 1px;
+}
+
+.line-wrapped {
+	overflow: hidden;
+	text-align: center;
+}
+  
+.line-wrapped:before,
+.line-wrapped:after {
+	background-color: #000;
+	content: "";
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	vertical-align: middle;
+	width: 50%;
+}
+
+.line-wrapped:before {
+	right: 0.5em;
+	margin-left: -50%;
+}
+
+.line-wrapped:after {
+	left: 0.5em;
+	margin-right: -50%;
 }
 
 /* Animation */

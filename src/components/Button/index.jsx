@@ -12,8 +12,21 @@ const StyledButton = styled.button`
     border: 1px solid ${props => props.dark ? "#9EA8C7" : "#000011"};
     transition: all 0.3s ease-out;
 
-    &::hover {
-        color: red;
+    & {
+        display: inline-block;
+    }
+      
+    &:after {
+        content: '';
+        width: 0px;
+        height: 2px;
+        display: block;
+        background: ${props => props.dark ? "#9EA8C7" : "#000011"};
+        transition: 0.5s;
+    }
+      
+    &:hover:after {
+        width: 100%;
     }
 `;
 

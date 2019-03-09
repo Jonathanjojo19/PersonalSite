@@ -72,7 +72,7 @@ export default class Navs extends React.Component {
 				<Collapse isOpen={this.state.isOpen} navbar>
 					<Nav className="ml-auto" navbar>
 						{anchors.map(({ label, target }) => (
-							<NavItem style={{marginRight: 10}}>
+							<NavItem>
 								<NavLink href={"#"+target}>
 									<Link
 										activeClass="active"

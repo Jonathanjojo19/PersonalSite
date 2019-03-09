@@ -6,6 +6,7 @@ import {
     CardTitle, 
     CardSubtitle
 } from 'reactstrap';
+
 import styled from 'styled-components';
 import gitLogo from "../../icons/git.svg";
 
@@ -50,7 +51,7 @@ class ProjectCard extends React.Component {
             <MarginedCard>
                 <div>
                     <Card style={CardStyle}>
-                        <ImageWrapper>
+                        <ImageWrapper dark={this.props.dark}>
                             <WrappedImage>
                                 <a href={this.props.gitRepo}>
                                     <img 
@@ -61,7 +62,7 @@ class ProjectCard extends React.Component {
                                 </a>
                             </WrappedImage>
                         </ImageWrapper>
-                        <CardBody>
+                        <CardBody style={{paddingTop:0}}>
                             <CardTitle>{this.props.title}</CardTitle>
                             <CardSubtitle>{this.props.subtitle}</CardSubtitle>
                             <CardText>{this.props.children}</CardText>

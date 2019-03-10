@@ -1,17 +1,17 @@
 import React from 'react';
-import { 
-    Card, 
-    CardText, 
+import {
+    Card,
+    CardText,
     CardBody,
-    CardTitle, 
-    CardSubtitle
+    CardTitle,
 } from 'reactstrap';
 
 import styled from 'styled-components';
 import gitLogo from "../../icons/git.svg";
 
-const MarginedCard = styled.div`
+const SpacedCard = styled.div`
     margin: 1em 0.5em;
+    position: relative;
 `;
 
 const ImageWrapper = styled.div`
@@ -42,34 +42,53 @@ const CardStyle = {
     borderRadius: 0,
     borderColor: "#091628",
     paddingTop: 0,
-    color: "#9EA8C7"
+    paddingBottom: 25,
+    color: "#9EA8C7",
 }
 
 class ProjectCard extends React.Component {
+    
     render() {
+        let link;
+        if (this.props.gitrepo != "") {
+            link = 
+                <a href={this.props.gitrepo}>
+                    <img
+                        src={gitLogo}
+                        alt="Repo"
+                        style={{ width: 16, margin: 2 }}
+                    />
+                </a>;
+        } else {
+            link = 
+                <a>
+                    <img
+                        src={gitLogo}
+                        alt="Repo"
+                        style={{ width: 16, margin: 2 }}
+                    />
+                </a>
+        }
         return (
-            <MarginedCard>
+            <SpacedCard>
                 <div>
-                    <Card style={CardStyle}>
+                    <Card className="project-card" style={CardStyle}>
                         <ImageWrapper dark={this.props.dark}>
                             <WrappedImage>
-                                <a href={this.props.gitRepo}>
-                                    <img 
-                                        src={gitLogo}
-                                        alt="Repo"
-                                        style={{width:16, margin:2}}
-                                    />
-                                </a>
+                                {link}
                             </WrappedImage>
                         </ImageWrapper>
-                        <CardBody style={{paddingTop:0}}>
-                            <CardTitle>{this.props.title}</CardTitle>
-                            <CardSubtitle>{this.props.subtitle}</CardSubtitle>
+                        <CardBody style={{ paddingTop: 0, textAlign: "left"}}>
+                            <CardTitle>
+                                <h3>
+                                    {this.props.title}
+                                </h3>
+                            </CardTitle>
                             <CardText>{this.props.children}</CardText>
                         </CardBody>
                     </Card>
                 </div>
-            </MarginedCard>
+            </SpacedCard>
         );
     }
 }

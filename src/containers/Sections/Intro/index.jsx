@@ -16,11 +16,23 @@ class Intro extends React.Component {
             >
                 <div>
                     <h5 className="white-text title">HELLO, ARE YOU LOOKING FOR ME? I AM</h5>
-                    {this.props.loading || <Typing speed={20} startDelay={0} hideCursor="true"> 
-                        <h1 className="light-blue-text mainTitle" style={{ marginBottom: 30, marginTop: 20, fontWeight:"bolder" }}>
-                            Jonathan Christopher Jakub
-                        </h1>
-                    </Typing>}
+                    {this.props.loading || 
+                        <Typing hideCursor={true}> 
+                            <Typing.Speed ms={10} />
+                            <h1 className="light-blue-text mainTitle" style={{ marginBottom: 30, marginTop: 20, fontWeight:"bolder" }}>
+                                Jonathan Christopher Jakub
+                            </h1>
+                            {/*
+                            <Typing.Delay ms={2500} />
+                            <Typing.Backspace count={26} />
+                            <h1 className="light-blue-text mainTitle" style={{ marginBottom: 30, marginTop: 20, fontWeight:"bolder" }}>
+                                Jojo
+                            </h1>
+                            <Typing.Delay ms={2500} />
+                            <Typing.Backspace count={4} />
+                            */}
+                        </Typing>
+                        }
                     <h6 className="white-text">
                         I want to be a <b>Full-Stack Developer</b> and I am interested in 
                         <b> Software Engineering</b> and <b>Machine Learning</b>.<br></br>

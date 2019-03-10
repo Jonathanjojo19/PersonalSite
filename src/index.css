@@ -12,14 +12,12 @@ body {
 	background-color: #000011;
 }
 
-.nav-link {
-	transition: 0.2s all ease-in-out;
-}
-
 body::-webkit-scrollbar { 
 	width: 0 !important;
 	height: 0 !important;
 }
+
+/* Colors */
 
 .dark-bg {
 	background-color: #000011;
@@ -48,6 +46,8 @@ body::-webkit-scrollbar {
 .white-text {
 	color: #e6e6e6;
 }
+
+/* Weights */
 
 .bold {
 	font-weight: bold;
@@ -101,6 +101,8 @@ body::-webkit-scrollbar {
 	text-align: center;
 }
 
+/* Line */
+
 .spaced {
 	letter-spacing: 1px;
 }
@@ -118,7 +120,7 @@ body::-webkit-scrollbar {
 	height: 1px;
 	position: relative;
 	vertical-align: middle;
-	width: 50%;
+	width: 35%;
 }
 
 .line-wrapped:before {
@@ -166,7 +168,17 @@ body::-webkit-scrollbar {
 }
 
 .nav-link {
+	transition: 0.2s all ease-in-out;
 	margin-right: 10px;
+}
+
+.project-card {
+	min-height: 40vh;
+	position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 @media (max-width: 750px) {

@@ -1,37 +1,38 @@
 const projects = [
     {
         title: "CareShare",
-        subtitle: "A Crowdfunding App Simulator",
         gitrepo: "https://gitlab.com/Jonathanjojo/careshare",
-        content: "Lorem ipsum dolor sit amet.",
+        content: "CareShare is a crowdfunding application simulator. It was an assigned project for Web Development Course I took in college. I managed to lead a group of four on completing the task with satisfying results and delivered quality.",
         dark: false
     },
     {
-        title: "CareShare",
-        subtitle: "A Crowdfunding App Simulator",
-        gitrepo: "https://gitlab.com/Jonathanjojo/careshare",
-        content: "Lorem ipsum dolor sit amet.",
+        title: "Store Manager",
+        gitrepo: "https://github.com/WebStoreGroup/Web-Store-Manager",
+        content: "Web Store Manager is the back end side of a 3-man team project. It is designed to be a usable template for online stores to monitor, display, and manage their own online store through a website: admin dashboard and customer views.",
         dark: false
     },
     {
-        title: "CareShare",
-        subtitle: "A Crowdfunding App Simulator",
-        gitrepo: "https://gitlab.com/Jonathanjojo/careshare",
-        content: "Lorem ipsum dolor sit amet.",
+        title: "Portfolio Web",
+        gitrepo: "https://jonathanjojo19.github.io/",
+        content: "This very web you are visiting is one of my own personal project. It kickstarted my experience on developing the frontend side of a web with React JS. Feel free to explore this web and get to know me if you are interested.",
+        dark: false
+    },
+    {
+        title: "ReversAI",
+        gitrepo: "",
+        content: "ReversAI is an AI-Powered reversi player agent. Using an adversarial search technique : the MiniMax Algorithm. The agent will try to maximize its success while preventing the opponent to prevail on every turn. This project is still on progress.", 
         dark: true
     },
     {
-        title: "CareShare",
-        subtitle: "A Crowdfunding App Simulator",
-        gitrepo: "https://gitlab.com/Jonathanjojo/careshare",
-        content: "Lorem ipsum dolor sit amet.",
-        dark: false
+        title: "Impulse",
+        gitrepo: "",
+        content: "Impulse is a To-Do Assistant Manager that takes shape as a Line Bot. It is built with Java Spring Frameworks as an implementation of taught Design Patterns and Microservices. This project is still on progress. ",
+        dark: true
     },
     {
-        title: "CareShare",
-        subtitle: "A Crowdfunding App Simulator",
-        gitrepo: "https://gitlab.com/Jonathanjojo/careshare",
-        content: "Lorem ipsum dolor sit amet.",
+        title: "Coming Soon",
+        gitrepo: "",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         dark: true
     },
 ];

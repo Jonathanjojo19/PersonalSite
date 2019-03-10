@@ -50,7 +50,7 @@ class ProjectCard extends React.Component {
     
     render() {
         let link;
-        if (this.props.gitrepo != "") {
+        if (this.props.gitrepo !== "") {
             link = 
                 <a href={this.props.gitrepo}>
                     <img

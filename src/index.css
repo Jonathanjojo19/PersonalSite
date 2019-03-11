@@ -225,6 +225,11 @@ body::-webkit-scrollbar {
     .large {
         font-size: 3em;
 	}
+
+	.mainTitle {
+		font-weight: bolder;
+		font-size: 2.5em;
+	}
 	
 	.nav-link {
 		margin-right: 5px;

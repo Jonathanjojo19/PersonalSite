@@ -12,8 +12,8 @@ const StyledFooter = styled.footer`
 
 const Footer = () => (
 	<StyledFooter>
-		<span className="light-blue-text">DEVELOPED BY </span>
-		<span className="white-text bolder"> JONATHAN CHRISTOPHER JAKUB</span>
+		<span className="white-text bolder">JonathanJojo </span>
+		<span className="light-blue-text"> est. 2019</span>
 	</StyledFooter>
 );
 

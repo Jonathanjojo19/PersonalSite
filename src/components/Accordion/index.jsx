@@ -36,7 +36,6 @@ class Accordion extends React.Component {
     click (i) {
         const newAccordion = this.state.accordionItems.slice();
         const index = newAccordion.indexOf(i);
-        console.log("clicked!");
         newAccordion[index].open = !newAccordion[index].open;
         this.setState({accordionItems: newAccordion});
     }

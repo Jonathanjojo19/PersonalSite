@@ -10,7 +10,7 @@ const NotFound = () => (
 		id="notfound"
 	>
 		<div>
-			<h1 className="dark-grey-text single-string-page">
+			<h1 className="dark-grey-text single-string-page large">
 				404 <span className="light-blue-text">Page Not Found</span>
 			</h1>
 			<h2 className="white-text">You seem like a hefty wanderer..</h2>

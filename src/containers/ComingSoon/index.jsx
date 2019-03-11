@@ -10,7 +10,7 @@ const ComingSoon = () => (
 		id="comingsoon"
 	>
 		<div>
-			<h1 className="dark-grey-text single-string-page">
+			<h1 className="dark-grey-text single-string-page large">
 				Under<span className="light-blue-text"><wbr></wbr>Construction</span>
 			</h1>
 			<h2 className="white-text" style={{paddingLeft:5}}>Pretty curious, aren't you?</h2>

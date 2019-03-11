@@ -16,9 +16,9 @@ class Contacts extends React.Component {
             >
                 <div style={{ wordWrap: 'break-word', whiteSpace: "initial" }}>
                     <h4 className="dark-blue-text title">LET'S GET IN TOUCH WITH ME!</h4>
-                    <h2 className="dark-blue-text mainTitle" style={{marginTop:20, marginBottom:20}}>
+                    <h3 className="dark-blue-text single-string-page mainTitle" style={{fontSize: 40, marginTop:20, marginBottom:20}}>
                         Jonathan Christopher Jakub
-                    </h2>
+                    </h3>
                     <span className="line-wrapped">
                         <a href="https://linkedin.com/in/jonathan-christopher-jakub-aba556164/">
                             <img

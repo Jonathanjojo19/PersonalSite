@@ -78,7 +78,7 @@ export default class Navs extends React.Component {
 										to={target}
 										spy={true}
 										smooth={true}
-										offset={-50}
+										offset={-60}
 										duration={1000}
 									>
 										<span className="bold spaced">{label}</span>

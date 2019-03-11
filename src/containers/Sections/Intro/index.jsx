@@ -44,7 +44,7 @@ class Intro extends React.Component {
                                 to="about"
                                 spy={true}
                                 smooth={true}
-                                offset={-50}
+                                offset={-60}
                                 duration={1000}
                                 >
                                 <span className="bold light-blue-text">KNOW MORE</span>

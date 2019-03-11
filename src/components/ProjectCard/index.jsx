@@ -11,22 +11,22 @@ import gitLogo from "../../icons/git.svg";
 
 const SpacedCard = styled.div`
     margin: 1em 0.5em;
-    position: relative;
+    // position: relative;
 `;
 
 const ImageWrapper = styled.div`
-    position: relative;
+    // position: relative;
     width:27px;
     background-color: ${props => props.dark ? "#000011" : "#9EA8C7"};;
     border-radius: 50%;
     float: right;
     margin: 0.5em 0.5em 0.5em auto;
 
-    &:before{
-        content: "";
-        display: block;
-        padding-top: 100%;
-    }
+    // &:before{
+    //     content: "";
+    //     display: block;
+    //     padding-top: 100%;
+    // }
 `;
 
 const WrappedImage = styled.div`

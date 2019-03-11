@@ -16,7 +16,7 @@ class Contacts extends React.Component {
             >
                 <div style={{ wordWrap: 'break-word', whiteSpace: "initial" }}>
                     <h4 className="dark-blue-text title">LET'S GET IN TOUCH WITH ME!</h4>
-                    <h1 className="dark-blue-text bolder" style={{ whiteSpace: "initial" }}>
+                    <h1 className="dark-blue-text bolder">
                         Jonathan Christopher Jakub
                     </h1>
                     <br />

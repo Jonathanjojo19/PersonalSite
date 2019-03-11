@@ -22,15 +22,6 @@ class Intro extends React.Component {
                             <h1 className="light-blue-text mainTitle" style={{ marginBottom: 30, marginTop: 20, fontWeight:"bolder" }}>
                                 Jonathan Christopher Jakub
                             </h1>
-                            {/*
-                            <Typing.Delay ms={2500} />
-                            <Typing.Backspace count={26} />
-                            <h1 className="light-blue-text mainTitle" style={{ marginBottom: 30, marginTop: 20, fontWeight:"bolder" }}>
-                                Jojo
-                            </h1>
-                            <Typing.Delay ms={2500} />
-                            <Typing.Backspace count={4} />
-                            */}
                         </Typing>
                         }
                     <h6 className="white-text">

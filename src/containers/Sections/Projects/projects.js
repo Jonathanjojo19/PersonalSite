@@ -13,7 +13,7 @@ const projects = [
     },
     {
         title: "Portfolio Web",
-        gitrepo: "https://jonathanjojo19.github.io/",
+        gitrepo: "https://github.com/jonathanjojo19/portfolio/",
         content: "This very web you are visiting is one of my own personal project. It kickstarted my experience on developing the frontend side of a web with React JS. Feel free to explore this web and get to know me if you are interested.",
         dark: false
     },

@@ -1,9 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Lora:400,400i,700,700i');
   
-  /* CSS Reset by https://alligator.io/css/minimal-css-reset/ */
+  @font-face {
+    font-family: 'Avenir LT Std 35 Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 35 Light'),
+      url('./fonts/AvenirLTStd-Medium.woff') format('woff');
+  }
 
   html {
     box-sizing: border-box;

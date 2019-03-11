@@ -69,14 +69,6 @@ body::-webkit-scrollbar {
 	src: local('Avenir LT Std 35 Light'),
 		url('./fonts/AvenirLTStd-Medium.woff') format('woff');
 }
-  
-@font-face {
-	font-family: 'Avenir LT Std 65 Medium';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Avenir LT Std 65 Medium'),
-		url('./fonts/AvenirLTStd-Medium.woff') format('woff');
-}
 
 .full {
 	min-width: 100vw;

@@ -13,7 +13,7 @@ import {
 const supportsHistory = 'pushState' in window.history;
 
 const Routes = () => (
-    <Router forceRefresh={!supportsHistory}>
+    <Router  basename={process.env.PUBLIC_URL} forceRefresh={!supportsHistory}>
         <Route
             render={({ location }) => {
                 const currentKey = location.pathname.split('/')[1] || '/'

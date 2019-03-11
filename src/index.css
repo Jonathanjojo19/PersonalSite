@@ -164,15 +164,12 @@ body::-webkit-scrollbar {
 }
 
 .project-card {
-	min-height: 40vh;
 	border: 0;
-	padding: 1.5em;
 	margin-top: 1em;
 	margin-bottom: 1.5em;
 	color: #000011;
 	font-size: inherit;
 	position: relative;
-	padding: 0.5em 0.8em 0.8em 0.75em;
 }
 
 .project-card::before, .project-card::after {

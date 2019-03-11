@@ -23,17 +23,15 @@ const ImageWrapper = styled.div`
     }
 `;
 
-const WrappedImage = styled.img`
-
-`;
-
 const CardStyle = {
+    minHeight: "45vh",
     textAlign: "left",
     backgroundColor: "#091628",
     borderRadius: 0,
     borderColor: "#091628",
-    padding: 25,
     color: "#9EA8C7",
+    padding: 20,
+    paddingTop: 10,
 }
 
 class ProjectCard extends React.Component {
@@ -43,18 +41,18 @@ class ProjectCard extends React.Component {
         if (this.props.gitrepo !== "") {
             link = 
                 <a href={this.props.gitrepo}>
-                    <WrappedImage
+                    <img
                         src={gitLogo}
                         alt="Repo"
-                        style={{ width: 20, zIndex:2, margin:3}}
+                        style={{ width: 20, zIndex:2, margin:3, marginTop:5}}
                     />
                 </a>;
         } else {
             link = 
-                <WrappedImage
+                <img
                     src={gitLogo}
                     alt="Repo"
-                    style={{ width: 20, zIndex:2, margin:3 }}
+                    style={{ width: 20, zIndex:2, margin:3, marginTop:5}}
                 />
         }
         return (
@@ -66,9 +64,9 @@ class ProjectCard extends React.Component {
                         </ImageWrapper>
                     </div>
                     <div>
-                        <h3>
+                        <h5 className="light-blue-text title" style={{letterSpacing:1, textAlign:"left"}}>
                             {this.props.title}
-                        </h3>
+                        </h5>
                     </div>
                     <div>
                         <p>

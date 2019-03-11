@@ -19,7 +19,7 @@ const Routes = () => (
                 const currentKey = location.pathname.split('/')[1] || '/'
                 const timeout = { enter: 500, exit: 300 }
                 return (
-                    <TransitionGroup transitionName="fade" component="main" className="page-main">
+                    <TransitionGroup component="main" className="page-main">
                         <CSSTransition key={currentKey} timeout={timeout} classNames="fade" appear>
                             <section className="page-main-inner">
                                 <Route

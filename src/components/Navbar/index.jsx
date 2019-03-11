@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 import anchors from './anchors';
 import logo from "../../icons/logo.svg";
 import styled from "styled-components";
@@ -65,7 +64,7 @@ export default class Navs extends React.Component {
 							alt="Logo"
 							style={{width:46, marginTop:2, marginBottom:2, marginRight:10}}
 						/>
-						<span class="spaced">Jonathanjojo</span>
+						<span className="spaced">Jonathanjojo</span>
 					</Link>
 				</NavbarBrand>
 				<NavbarToggler onClick={this.toggle}></NavbarToggler>

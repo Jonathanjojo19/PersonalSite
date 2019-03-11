@@ -1,61 +1,9 @@
 import React from "react";
+import experiences from "./experiences";
 
-class App extends React.Component {
-    render () {
-        let data = [
-          {
-          title: "One", 
-          content: `Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis 
-                    nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit 
-                    in voluptate velit esse cillum dolore 
-                    eu fugiat nulla pariatur. Excepteur 
-                    sint occaecat cupidatat non proident, 
-                    sunt in culpa qui officia deserunt 
-                    mollit anim id est laborum.`
-        }, {
-          title: "Two", 
-          content: `Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis 
-                    nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit 
-                    in voluptate velit esse cillum dolore 
-                    eu fugiat nulla pariatur. Excepteur 
-                    sint occaecat cupidatat non proident, 
-                    sunt in culpa qui officia deserunt 
-                    mollit anim id est laborum.`
-        },{
-          title: "Three", 
-          content: `Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis 
-                    nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit 
-                    in voluptate velit esse cillum dolore 
-                    eu fugiat nulla pariatur. Excepteur 
-                    sint occaecat cupidatat non proident, 
-                    sunt in culpa qui officia deserunt 
-                    mollit anim id est laborum.`
-        }
-      ];
-      
-        return (
-          <Accordion data={data} />
-      );
-    }
-}
+const CompleteAccordion = () => (
+    <Accordion data={experiences}/>
+);
   
 class Accordion extends React.Component {
     constructor(props) {
@@ -75,6 +23,7 @@ class Accordion extends React.Component {
             accordion.push({
                 title: i.title, 
                 content: i.content, 
+                period: i.period,
                 open: false
             });
         });
@@ -94,9 +43,11 @@ class Accordion extends React.Component {
     
     render () {
         const sections = this.state.accordionItems.map((i) => (
-            <div key={this.state.accordionItems.indexOf(i)}>
+            <div 
+                key={this.state.accordionItems.indexOf(i)}
+            >
                 <div 
-                    className="acc-title" 
+                    className={"acc-title " + (i.open ? "light-blue-text" : "dark-grey-text")}
                     onClick={this.click.bind(null, i)}
                 >
                     <div className="arrow-wrapper">
@@ -105,9 +56,12 @@ class Accordion extends React.Component {
                             : "fa fa-angle-down"}
                         ></i>
                     </div>
-                    <span className="acc-title-text">
+                    <h6 className="acc-title-text">
                         {i.title}
-                    </span>
+                    </h6>
+                    <p className="acc-title-text">
+                        {i.period}
+                    </p>
                 </div>
                 <div className={i.open 
                     ? "content content-open" 
@@ -116,7 +70,8 @@ class Accordion extends React.Component {
                     <div className={i.open 
                         ? "content-text content-text-open" 
                         : "content-text"}
-                    > {i.content}
+                    > 
+                        {i.content} 
                     </div>
                 </div>
             </div>
@@ -130,4 +85,4 @@ class Accordion extends React.Component {
     }
 }
   
-export default App;
+export default CompleteAccordion;

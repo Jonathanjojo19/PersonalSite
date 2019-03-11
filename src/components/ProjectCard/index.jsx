@@ -30,8 +30,9 @@ const CardStyle = {
     borderRadius: 0,
     borderColor: "#091628",
     color: "#9EA8C7",
-    padding: 20,
+    padding: 25,
     paddingTop: 10,
+    paddingBottom: 15
 }
 
 class ProjectCard extends React.Component {

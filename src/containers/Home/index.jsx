@@ -54,8 +54,8 @@ class Home extends React.Component {
                     <Navs />
                     <Intro loading={loading}/>
                     <About/>
-                    <Projects/>
                     <Experiences/>
+                    <Projects/>
                     <Contacts/>
                     <Footer/>
                 </div>

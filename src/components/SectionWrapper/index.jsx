@@ -3,8 +3,7 @@ import styled from "styled-components";
 
 const StyledWrapper = styled.div`
     background-color: ${props => props.dark ? "#000011" : "#e6e6e6"}
-    display: flex;
-    padding: 20vh 15vw 20vh 15vw;
+    padding: 20vh 15vw 5vh 15vw;
     align-items: center;
     justify-content: center;
     text-align: ${props => props.align};

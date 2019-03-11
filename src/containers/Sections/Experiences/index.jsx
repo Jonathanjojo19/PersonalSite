@@ -1,5 +1,6 @@
 import React from "react";
 import Wrapper from "../../../components/SectionWrapper";
+import Accordion from "../../../components/Accordion";
 
 class Experiences extends React.Component {
     render() {
@@ -12,6 +13,9 @@ class Experiences extends React.Component {
             >
                 <div>
                     <h5 className="white-text title">ACHIEVEMENTS & EXPERIENCES</h5>
+                </div>
+                <div>
+                <Accordion/>
                 </div>
             </Wrapper>
         );

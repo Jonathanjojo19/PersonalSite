@@ -68,22 +68,22 @@ class ProjectCard extends React.Component {
         }
         return (
             <SpacedCard>
-                <div>
-                    <Card className="project-card" style={CardStyle}>
-                        {/* <ImageWrapper dark={this.props.dark}>
+                <div style={CardStyle}>
+                    {/* <Card className="project-card" style={CardStyle}>
+                        <ImageWrapper dark={this.props.dark}>
                             <WrappedImage>
                                 {link}
                             </WrappedImage>
-                        </ImageWrapper> */}
+                        </ImageWrapper>
                         <CardBody style={{ paddingTop: 0, textAlign: "left"}}>
-                            {/* <CardTitle>
+                            <CardTitle>
                                 <h3>
                                     {this.props.title}
                                 </h3>
-                            </CardTitle> */}
+                            </CardTitle>
                             <CardText>{this.props.children}</CardText>
                         </CardBody>
-                    </Card>
+                    </Card> */}
                 </div>
             </SpacedCard>
         );

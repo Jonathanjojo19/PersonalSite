@@ -19,7 +19,7 @@ class Intro extends React.Component {
                             <div className="col-md-4">
                                 <ProjectCard title={title} subtitle={subtitle} gitrepo={gitrepo} dark={dark}>
                                     <span className="white-text">
-                                        {content}                                
+                                        {content}                           
                                     </span>
                                 </ProjectCard>
                             </div>

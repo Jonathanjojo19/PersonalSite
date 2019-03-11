@@ -14,7 +14,7 @@ const SpacedCard = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-    position: relative;
+    // position: relative;
     width:27px;
     background-color: ${props => props.dark ? "#000011" : "#9EA8C7"};;
     border-radius: 50%;
@@ -29,7 +29,7 @@ const ImageWrapper = styled.div`
 `;
 
 const WrappedImage = styled.div`
-    position:  absolute;
+    // position:  absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -70,17 +70,17 @@ class ProjectCard extends React.Component {
             <SpacedCard>
                 <div>
                     <Card className="project-card" style={CardStyle}>
-                        <ImageWrapper dark={this.props.dark}>
+                        {/* <ImageWrapper dark={this.props.dark}>
                             <WrappedImage>
                                 {link}
                             </WrappedImage>
-                        </ImageWrapper>
+                        </ImageWrapper> */}
                         <CardBody style={{ paddingTop: 0, textAlign: "left"}}>
-                            <CardTitle>
+                            {/* <CardTitle>
                                 <h3>
                                     {this.props.title}
                                 </h3>
-                            </CardTitle>
+                            </CardTitle> */}
                             <CardText>{this.props.children}</CardText>
                         </CardBody>
                     </Card>

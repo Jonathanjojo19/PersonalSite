@@ -61,13 +61,11 @@ class ProjectCard extends React.Component {
                 </a>;
         } else {
             link = 
-                <a>
-                    <img
-                        src={gitLogo}
-                        alt="Repo"
-                        style={{ width: 16, margin: 2 }}
-                    />
-                </a>
+                <img
+                    src={gitLogo}
+                    alt="Repo"
+                    style={{ width: 16, margin: 2 }}
+                />
         }
         return (
             <SpacedCard>

@@ -103,7 +103,7 @@ body::-webkit-scrollbar {
 	overflow: hidden;
 	text-align: center;
 }
-  
+
 .line-wrapped:before,
 .line-wrapped:after {
 	background-color: #000;
@@ -125,6 +125,10 @@ body::-webkit-scrollbar {
 	left: 0.5em;
 	margin-right: -50%;
 	transform-origin: 0% 50%;
+}
+
+.line-wrapped:hover > .line-wrapped:after {
+	height:2px;
 }
 
 /* Animation */

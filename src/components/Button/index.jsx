@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
-const StyledButton = styled.button`
+const StyledButtonLink = styled(Link)`
     background: ${props => props.dark ? "#000011" : "#9EA8C7"};
     color: ${props => props.dark ? "#9EA8C7" : "#000011"};
     font-size: 1em;
@@ -18,24 +19,83 @@ const StyledButton = styled.button`
       
     &:after {
         content: '';
-        width: 0px;
+        width: 100%;
         height: 2px;
         display: block;
         background: ${props => props.dark ? "#9EA8C7" : "#000011"};
         transition: 0.5s;
+        transform-origin: 50% 50%;
+        transform: scale(0,1);
     }
       
     &:hover:after {
         width: 100%;
+        transform: scale(1,1);
     }
 `;
 
+const StyledButtonA = styled.a`
+    background: ${props => props.dark ? "#000011" : "#9EA8C7"};
+    color: ${props => props.dark ? "#9EA8C7" : "#000011"};
+    font-size: 1em;
+    text-decoration: none;
+    margin: 1em;
+    min-width: 200px;
+    padding: 1em 3em;
+    border: 1px solid ${props => props.dark ? "#9EA8C7" : "#000011"};
+    transition: all 0.5s ease-out;
+
+    & {
+        display: inline-block;
+    }
+    
+    &:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        display: block;
+        background: ${props => props.dark ? "#9EA8C7" : "#000011"};
+        transition: 0.5s;
+        transform-origin: 50% 50%;
+        transform: scale(0,1);
+    }
+    
+    &:hover:after {
+        width: 100%;
+        transform: scale(1,1);
+    }
+`;
+
+
 class Button extends React.Component {
     render() {
+        let link;
+        if (this.props.external) {
+            link = 
+                <StyledButtonA
+                    dark={this.props.dark} 
+                    to={this.props.to} 
+                    spy={this.props.spy}
+                    smooth={this.props.smooth} 
+                    offset={this.props.offset} 
+                    duration={this.props.duration}
+                >
+                    {this.props.children}
+                </StyledButtonA>
+        } else {
+            link = 
+                <StyledButtonLink
+                    dark={this.props.dark} 
+                    href={this.props.href}
+                    style={this.props.style}
+                    target={this.props.target}
+                    rel={this.props.rel}
+                >
+                    {this.props.children}
+                </StyledButtonLink>
+        }
         return (
-            <StyledButton dark={this.props.dark}>
-                {this.props.children}
-            </StyledButton>
+            link
         )
     }
 }

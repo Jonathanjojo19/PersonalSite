@@ -111,17 +111,20 @@ body::-webkit-scrollbar {
 	display: inline-block;
 	height: 1px;
 	vertical-align: middle;
-	width: 30%;
+	width: 40%;
+	transform: scale(0.5,1);
 }
 
 .line-wrapped:before {
 	right: 0.5em;
 	margin-left: -50%;
+	transform-origin: 100% 50%;
 }
 
 .line-wrapped:after {
 	left: 0.5em;
 	margin-right: -50%;
+	transform-origin: 0% 50%;
 }
 
 /* Animation */
@@ -162,6 +165,8 @@ body::-webkit-scrollbar {
 	transition: 0.2s all ease-in-out;
 	margin-right: 10px;
 }
+
+/* Card */
 
 .project-card {
 	border: 0;
@@ -215,8 +220,8 @@ body::-webkit-scrollbar {
 .draw:hover::after {
 	border-bottom-color: #9EA8C7;
 	border-left-color: #9EA8C7;
-	-webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-	transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+	-webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+	transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
 
 /* Media Custom */

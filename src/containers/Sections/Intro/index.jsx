@@ -2,7 +2,6 @@ import Button from "../../../components/Button";
 import React from "react";
 import Typing from 'react-typing-animation';
 import Wrapper from "../../../components/SectionWrapper";
-import { Link } from "react-scroll";
 
 class Intro extends React.Component {    
     render() {
@@ -30,26 +29,24 @@ class Intro extends React.Component {
                         Currently a Computer Science student at The University of Indonesia, I still have a lot to learn..
                     </h6>
                     <div style={{ marginTop: 30, marginBottom:100 }}>
-                        <Button dark>
-                            <Link 
-                                to="about"
-                                spy={true}
-                                smooth={true}
-                                offset={-60}
-                                duration={1000}
-                                >
-                                <span className="bold light-blue-text">KNOW MORE</span>
-                            </Link>
+                        <Button 
+                            dark
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            offset={-60}
+                            duration={1000}
+                        >
+                            <span className="bold light-blue-text">KNOW MORE</span>    
                         </Button>
-                        <Button light>
-                            <a 
-                                href="https://drive.google.com/uc?export=download&id=1IZhxTWkHtbGeQ-XGn-F-8VG2poMb_TEt"
-                                style={{textDecoration: "none"}}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <span className="bold dark-blue-text">SEE RESUME</span>
-                            </a>
+                        <Button 
+                            light
+                            href="https://drive.google.com/uc?export=download&id=1IZhxTWkHtbGeQ-XGn-F-8VG2poMb_TEt"
+                            style={{textDecoration: "none"}}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span className="bold dark-blue-text">SEE RESUME</span>    
                         </Button>                    
                     </div>
                 </div>

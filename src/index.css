@@ -118,7 +118,7 @@ body::-webkit-scrollbar {
 .line-wrapped:before {
 	right: 0.5em;
 	margin-left: -50%;
-	transform-origin: 100% 50%;
+	transform-origin: 100% 0%;
 }
 
 .line-wrapped:after {

@@ -27,7 +27,7 @@ class Contacts extends React.Component {
                                 style={{ width: 25, marginRight: 5, marginLeft: 5 }}
                             />
                         </a>
-                        <a href="mailto: jonathanchristopher1199@gmail.com">
+                        <a href="mailto: jonathan.christopher@ui.ac.id">
                             <img
                                 src={emailLogo}
                                 alt="Email"

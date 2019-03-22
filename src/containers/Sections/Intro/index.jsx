@@ -24,9 +24,9 @@ class Intro extends React.Component {
                         </Typing>
                         }
                     <h6 className="white-text">
-                        I want to be a <b>Full-Stack Developer</b> and I am interested in 
+                        I am a future <b>Full-Stack Developer</b> and I am interested in 
                         <b> Software Engineering</b> and <b>Machine Learning</b>.<br></br>
-                        Currently a Computer Science student at The University of Indonesia, I still have a lot to learn..
+                        Currently a Computer Science student at The University of Indonesia, I still have a lot to learn and I am ready for it.
                     </h6>
                     <div style={{ marginTop: 30, marginBottom:100 }}>
                         <Button 

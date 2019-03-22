@@ -8,7 +8,7 @@ const projects = [
     {
         title: "Store Manager",
         gitrepo: "https://github.com/WebStoreGroup/Web-Store-Manager",
-        content: "Web Store Manager is the back end side of a 3-man team project. It is designed to be a usable template for online stores to monitor, display, and manage their own online store through a website: admin dashboard and customer views.",
+        content: "I worked on Web Store Manager's back end side: providing API views and permissions handling. It is designed to be a usable template for online stores to monitor, display, and manage their own online store through a website: admin dashboard and customer views.",
         dark: false
     },
     {
@@ -20,7 +20,7 @@ const projects = [
     {
         title: "ReversAI",
         gitrepo: "",
-        content: "ReversAI is an AI-Powered reversi player agent. Using an adversarial search technique : the MiniMax Algorithm. The agent will try to maximize its success while preventing the opponent to prevail on every turn. This project is still on progress.", 
+        content: "ReversAI is an AI-Powered reversi player agent that will be available online using ReactJS framework. Using the MiniMax Algorithm, the agent will try to maximize its success while preventing the opponent to prevail on every turn. This project is still on progress.", 
         dark: true
     },
     {

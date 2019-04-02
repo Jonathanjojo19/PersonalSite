@@ -102,6 +102,13 @@ body::-webkit-scrollbar {
 .line-wrapped {
 	overflow: hidden;
 	text-align: center;
+	pointer-events: visible;
+}
+
+.line-wrapped:hover:before,
+.line-wrapped:hover:after {
+	transform: scale(1, 1);
+	transition-duration: 1s;	
 }
 
 .line-wrapped:before,
@@ -112,13 +119,13 @@ body::-webkit-scrollbar {
 	height: 1px;
 	vertical-align: middle;
 	width: 40%;
-	transform: scale(0.5,1);
+	transform: scale(0.25, 1);
 }
 
 .line-wrapped:before {
 	right: 0.5em;
 	margin-left: -50%;
-	transform-origin: 100% 0%;
+	transform-origin: 100% 50%;
 }
 
 .line-wrapped:after {

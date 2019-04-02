@@ -19,7 +19,7 @@ class Contacts extends React.Component {
                     <h3 className="dark-blue-text single-string-page mainTitle" style={{fontSize: 40, marginTop:20, marginBottom:20}}>
                         Jonathan Christopher Jakub
                     </h3>
-                    <span className="line-wrapped">
+                    <div className="line-wrapped">
                         <a href="https://linkedin.com/in/jonathan-christopher-jakub-aba556164/">
                             <img
                                 src={linkedinLogo}
@@ -41,7 +41,7 @@ class Contacts extends React.Component {
                                 style={{ width: 25, marginRight: 5, marginLeft: 5 }}
                             />
                         </a>
-                    </span>
+                    </div>
                 </div>
             </Wrapper>
         );

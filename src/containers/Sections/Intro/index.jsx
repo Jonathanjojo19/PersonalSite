@@ -41,12 +41,10 @@ class Intro extends React.Component {
                         </Button>
                         <Button 
                             light
-                            href="https://drive.google.com/uc?export=download&id=1G42wS_qnWkf-aqWyIyizBro2AxF-O6t_"
-                            style={{textDecoration: "none"}}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            external
+                            href="https://docs.google.com/document/d/15w3Yma1BeAfFxDieAPPnKCRk0LqA95TjAo81FhRhXL8/edit?usp=sharing"
                         >
-                            <span className="bold dark-blue-text">SEE RESUME</span>    
+                            <span className="bold dark-blue-text">SEE RESUME</span>
                         </Button>                    
                     </div>
                 </div>

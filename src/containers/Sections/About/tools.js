@@ -1,7 +1,7 @@
 const tools = [
     'DJANGO',
     'DJANGOREST',
-    'REACT',
+    'REACTJS',
     'GIT',
     'AUTH0',
     'SPRING',

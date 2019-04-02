@@ -19,13 +19,13 @@ const projects = [
     },
     {
         title: "ReversAI",
-        gitrepo: "",
+        gitrepo: "https://gitlab.com/reversai/reversi-ai",
         content: "ReversAI is an AI-Powered reversi player agent that will be available online using ReactJS framework. Using the MiniMax Algorithm, the agent will try to maximize its success while preventing the opponent to prevail on every turn. This project is still on progress.", 
         dark: true
     },
     {
         title: "Impulse",
-        gitrepo: "",
+        gitrepo: "https://gitlab.com/impulse_bot/",
         content: "Impulse is a To-Do Assistant Manager that takes shape as a Line Bot. It is built with Java Spring Frameworks as an implementation of taught Design Patterns and Microservices. This project is still on progress. ",
         dark: true
     },

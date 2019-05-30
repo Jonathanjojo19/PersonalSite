@@ -2,10 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import gitLogo from "../../icons/git.svg";
 
-const SpacedCard = styled.div`
-    margin: 0.5em;
-`;
-
 const ImageWrapper = styled.div`
     position: relative;
     width:27px;
@@ -22,18 +18,6 @@ const ImageWrapper = styled.div`
         padding-top: 100%; 
     }
 `;
-
-const CardStyle = {
-    minHeight: "45vh",
-    textAlign: "left",
-    backgroundColor: "#091628",
-    borderRadius: 0,
-    borderColor: "#091628",
-    color: "#9EA8C7",
-    padding: 25,
-    paddingTop: 10,
-    paddingBottom: 15
-}
 
 class ProjectCard extends React.Component {
     
@@ -57,25 +41,23 @@ class ProjectCard extends React.Component {
                 />
         }
         return (
-            <SpacedCard>
-                <div className="project-card draw" style={CardStyle}>
-                    <div>
-                        <ImageWrapper dark={this.props.dark}>
-                            {link}
-                        </ImageWrapper>
-                    </div>
-                    <div>
-                        <h5 className="light-blue-text title" style={{letterSpacing:1, textAlign:"left"}}>
-                            {this.props.title}
-                        </h5>
-                    </div>
-                    <div>
-                        <p>
-                            {this.props.children}
-                        </p>
-                    </div>
+            <div className="project-card draw">
+                <div>
+                    <ImageWrapper dark={this.props.dark}>
+                        {link}
+                    </ImageWrapper>
                 </div>
-            </SpacedCard>
+                <div>
+                    <h5 className="light-blue-text title" style={{letterSpacing:1, textAlign:"left"}}>
+                        {this.props.title}
+                    </h5>
+                </div>
+                <div>
+                    <p className="light-grey-text">
+                        {this.props.children}
+                    </p>
+                </div>
+            </div>
         );
     }
 }

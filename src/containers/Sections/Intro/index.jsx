@@ -8,7 +8,7 @@ class Intro extends React.Component {
         return (
             <Wrapper 
                 dark 
-                height="90"
+                height="100"
                 align="center"
                 style={{ marginTop: -20 }} 
                 id="intro"

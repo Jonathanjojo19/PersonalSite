@@ -55,10 +55,10 @@ class Accordion extends React.Component {
                             : "fa fa-angle-down"}
                         ></i>
                     </div>
-                    <h6 className="acc-title-text">
+                    <h5 className="acc-title-text">
                         {i.title}
-                    </h6>
-                    <p className="acc-title-text">
+                    </h5>
+                    <p className="acc-title-text light-grey-text">
                         {i.period}
                     </p>
                 </div>
@@ -70,7 +70,7 @@ class Accordion extends React.Component {
                         ? "content-text content-text-open" 
                         : "content-text"}
                     > 
-                        {i.content} 
+                        <h6>{i.content}</h6>
                     </div>
                 </div>
             </div>

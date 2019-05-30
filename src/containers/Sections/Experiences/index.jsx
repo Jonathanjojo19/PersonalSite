@@ -12,10 +12,12 @@ class Experiences extends React.Component {
                 id="experiences"
             >
                 <div>
-                    <h5 className="white-text title">ACHIEVEMENTS & EXPERIENCES</h5>
-                </div>
-                <div>
-                <Accordion/>
+                    <div>
+                        <h5 className="white-text title">ACHIEVEMENTS & EXPERIENCES</h5>
+                    </div>
+                    <div>
+                        <Accordion/>
+                    </div>
                 </div>
             </Wrapper>
         );

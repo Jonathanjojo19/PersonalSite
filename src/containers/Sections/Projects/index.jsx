@@ -3,7 +3,7 @@ import Wrapper from "../../../components/SectionWrapper";
 import ProjectCard from "../../../components/ProjectCard";
 import projects from "./projects";
 
-class Intro extends React.Component {
+class Projects extends React.Component {
     render() {
         return (
             <Wrapper
@@ -14,13 +14,13 @@ class Intro extends React.Component {
             >
                 <div>
                     <h5 className="light-blue-text title" style={{ marginBottom: 20 }}>PROJECTS</h5>
-                    <div className="row justify-contents-start">
+                    <div className="row d-flex justify-content-center">
                         {projects.map(({ title, subtitle, gitrepo, content, dark }) => (
-                            <div className="col-md-4">
+                            <div className="col-xl-4">
                                 <ProjectCard title={title} subtitle={subtitle} gitrepo={gitrepo} dark={dark}>
-                                    <span className="white-text">
+                                    <span className="white-text"><h6>
                                         {content}                           
-                                    </span>
+                                    </h6></span>
                                 </ProjectCard>
                             </div>
                         ))}
@@ -31,4 +31,4 @@ class Intro extends React.Component {
     }
 }
 
-export default Intro;
+export default Projects;

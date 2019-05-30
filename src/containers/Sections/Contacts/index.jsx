@@ -15,8 +15,8 @@ class Contacts extends React.Component {
                 align="center"
             >
                 <div style={{ wordWrap: 'break-word', whiteSpace: "initial" }}>
-                    <h4 className="dark-blue-text title">LET'S GET IN TOUCH WITH ME!</h4>
-                    <h3 className="dark-blue-text single-string-page mainTitle" style={{fontSize: 40, marginTop:20, marginBottom:20}}>
+                    <h4 className="dark-blue-text">LET'S GET IN TOUCH WITH ME!</h4>
+                    <h3 className="dark-blue-text" style={{marginTop:20, marginBottom:20}}>
                         Jonathan Christopher Jakub
                     </h3>
                     <div className="line-wrapped">

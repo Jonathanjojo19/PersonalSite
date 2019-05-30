@@ -3,13 +3,16 @@ import styled from "styled-components";
 
 const StyledWrapper = styled.div`
     background-color: ${props => props.dark ? "#000011" : "#e6e6e6"}
-    padding: 20vh 15vw 25vh 15vw;
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: ${props => props.align};
     min-width: 100vw;
     max-width: 100vw;
     min-height: ${props => props.height}vh;
+    padding: 80px 50px;
 `;
 
 class Wrapper extends React.Component {

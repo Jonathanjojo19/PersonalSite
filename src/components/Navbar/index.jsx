@@ -56,7 +56,7 @@ export default class Navs extends React.Component {
 						to="intro"
 						spy={true}
 						smooth={true}
-						offset={-50}
+						offset={0}
 						duration={1000}
 					>
 						<img 

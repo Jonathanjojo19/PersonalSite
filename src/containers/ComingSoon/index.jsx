@@ -11,7 +11,7 @@ const ComingSoon = () => (
 	>
 		<div>
 			<h1 className="dark-grey-text single-string-page large">
-				Under<span className="light-blue-text"><wbr></wbr>Construction</span>
+				Up<span className="light-blue-text"><wbr></wbr>Coming</span>
 			</h1>
 			<h2 className="white-text" style={{paddingLeft:5}}>Pretty curious, aren't you?</h2>
 			<span className="light-blue-text" style={{paddingLeft:5}}>For now, just explore {" "}

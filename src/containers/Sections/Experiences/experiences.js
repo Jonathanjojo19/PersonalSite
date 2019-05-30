@@ -1,13 +1,18 @@
 const experiences = [
     {
+      title:'Software Engineer Intern at STOQO', 
+      period:'June 2018 - Present',
+      content:'I was selected as an backend software developer intern at STOQO Company.'
+    },
+    {
       title:'IT-Dev Staff at UI’s Faculty of Computer Science Student Council', 
       period:'Feb 2018 - Dec 2018',
       content:'I worked as the back-end developer and responsible for integrating currently available apps with Line Bot. Later on, I was also assigned to design the backend APIs for another app made to collect and present files uploaded by students as references and study materials for other students.'
     },
     {
       title:'Teaching Assistant (Programming Fundamentals with Python and Java)',
-      period:'Jan 2018 - Present', 
-      content:'Three times have I monitored a class of 55 students and tutored 13 of them personally. I have been in charge of monitoring the lab sessions and grading their works. I have been teaching students to comprehend Python and Java concepts of programming and general best practices.'
+      period:'Jan 2018 - May 2019', 
+      content:'I monitored a class of 55 students and tutored 13 of them personally. I have been in charge of monitoring the lab sessions and grading their works. I have been teaching students to comprehend Python and Java concepts of programming and general best practices.'
     },
     {
       title:'Compfest X - GOJEK Software Engineering Academy Best Team’s Member',

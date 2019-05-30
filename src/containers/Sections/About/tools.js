@@ -2,10 +2,10 @@ const tools = [
     'DJANGO',
     'DJANGOREST',
     'REACTJS',
-    'GIT',
-    'AUTH0',
+    'EXPRESS',
     'SPRING',
-    'VSCODE'
+    'RAILS',
+    'GIT'
 ];
 
 export default tools;

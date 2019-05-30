@@ -1,5 +1,5 @@
 import React from "react";
-import experiences from "./experiences";
+import experiences from "../../containers/Sections/Experiences/experiences";
 
 const CompleteAccordion = () => (
     <Accordion data={experiences}/>

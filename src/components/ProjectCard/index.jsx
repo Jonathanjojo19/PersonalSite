@@ -53,6 +53,7 @@ class ProjectCard extends React.Component {
                     </h5>
                 </div>
                 <div>
+                    <br></br>
                     <p className="light-grey-text">
                         {this.props.children}
                     </p>

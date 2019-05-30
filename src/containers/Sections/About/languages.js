@@ -5,6 +5,7 @@ const languages = [
     'HTML5',
     'CSS4',
     'RUBY',
+    'SQL',
     'MATLAB'
 ];
 

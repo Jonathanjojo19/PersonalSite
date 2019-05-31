@@ -1,11 +1,11 @@
+import GlobalStyles from "./globalStyles";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Routes from './containers/Routes';
-import './index.css';
 import 'font-awesome/css/font-awesome.min.css';
+import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-import GlobalStyles from "./globalStyles";
 
 ReactDOM.render(
     <React.Fragment>

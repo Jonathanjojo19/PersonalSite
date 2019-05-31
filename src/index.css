@@ -95,14 +95,9 @@ body::-webkit-scrollbar {
 	pointer-events: visible;
 }
 
-.line-wrapped:hover:before,
-.line-wrapped:hover:after {
-	transform: scale(1, 1);
-	transition-duration: 1s;	
-}
-
 .line-wrapped:before,
 .line-wrapped:after {
+	transition: 0.5s;
 	background-color: #000;
 	content: "";
 	display: inline-block;
@@ -126,6 +121,12 @@ body::-webkit-scrollbar {
 
 .line-wrapped:hover > .line-wrapped:after {
 	height:2px;
+}
+
+.line-wrapped:hover:before,
+.line-wrapped:hover:after {
+	transform: scale(1, 1);
+	transition-duration: 1s;	
 }
 
 /* Animation */
@@ -192,27 +193,23 @@ body::-webkit-scrollbar {
 	box-sizing: inherit;
 	content: '';
 	position: absolute;
-	width: 100%;
-	height: 100%;
 }
 
 .project-card::before{
 	box-sizing: inherit;
 	content: '';
 	position: absolute;
-	width: 100%;
-	height: 100%;
 }
-
 .draw {
 	-webkit-transition: color 0.25s;
 	transition: color 0.25s;
-	z-index: 5;
 }
 .draw::before, .draw::after {
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
 	border: 2px solid transparent;
-	width: 0;
-	height: 0;
+	width: 0%;
+	height: 0%;
 }
 .draw::before {
 	top: 0;
@@ -222,25 +219,21 @@ body::-webkit-scrollbar {
 	bottom: 0;
 	right: 0;
 }
-.draw:hover {
-	color: #9EA8C7;
-}
 .draw:hover::before, .draw:hover::after {
-	width: 100%;
 	height: 100%;
-	z-index: -1;
+	width: 100%;
 }
 .draw:hover::before {
 	border-top-color: #9EA8C7;
 	border-right-color: #9EA8C7;
-	-webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-	transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+	-webkit-transition: width 0.25s linear, height 0.25s linear 0.25s;
+	transition: width 0.25s linear, height 0.25s linear 0.25s;
 }
 .draw:hover::after {
 	border-bottom-color: #9EA8C7;
 	border-left-color: #9EA8C7;
-	-webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-	transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+	-webkit-transition: width 0.25s linear, height 0.25s linear 0.25s;
+	transition: width 0.25s linear, height 0.25s linear 0.25s;
 }
 
 /* Font Sizes */
@@ -280,8 +273,63 @@ h6 {
 }
 
 /* Media Custom */
-
 @media (max-width: 1200px) {
+	.mainTitle {
+		font-weight: bolder;
+		font-size: 5em;
+	}
+	
+	.nav-link {
+		margin-right: 5px;
+	}
+
+	.navbar-brand {
+		margin-right: 0px;
+	}
+
+	.nav {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.project-card {
+		width: 80vw;
+		height: 40vw;
+		padding: 5%;
+	}
+
+	.large {
+        font-size: 4em;
+	}
+
+	h1 {
+		font-size: 5em;
+	}
+	
+	h2 {
+		font-size: 3em;
+	}
+	
+	h3 {
+		font-size: 2.5em;
+	}
+	
+	h4 {
+		font-size: 1.4em;
+	}
+	
+	h5 {
+		font-size: 1.3em;
+	}
+	
+	h6 {
+		font-size: 1.2em;
+	}
+}
+
+
+
+@media (max-width: 768px) {
 	.mainTitle {
 		font-weight: bolder;
 		font-size: 3em;
@@ -301,8 +349,8 @@ h6 {
 	}
 
 	.project-card {
-		width: 400px;
-		height: 400px;
+		width: 80vw;
+		height: 80vw;
 		padding: 5%;
 	}
 

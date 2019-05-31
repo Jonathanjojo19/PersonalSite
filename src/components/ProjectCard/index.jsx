@@ -53,8 +53,7 @@ class ProjectCard extends React.Component {
                     </h5>
                 </div>
                 <div>
-                    <br></br>
-                    <p className="light-grey-text">
+                    <p className="light-grey-text" style={{marginTop:"3px"}}>
                         {this.props.children}
                     </p>
                 </div>

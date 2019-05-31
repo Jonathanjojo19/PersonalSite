@@ -71,9 +71,6 @@ export default createGlobalStyle`
   h5 {
     font-size: 1.5em;
   }
-  h6 {
-    font-size: 1em;
-  }
   p {
     font-size: 0.75em;
   }

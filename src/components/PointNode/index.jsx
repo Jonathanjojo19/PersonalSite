@@ -22,7 +22,9 @@ class Point extends React.Component {
     render() {
         return (
             <StyledButton blue={this.props.blue}>
-                {this.props.children}
+                <span className="point">
+                    {this.props.children}
+                </span>
             </StyledButton>
         )
     }

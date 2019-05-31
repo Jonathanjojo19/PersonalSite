@@ -55,19 +55,6 @@ export default createGlobalStyle`
   body {
     background: #000011;
   }
-
-  h1 {
-    font-size: 6em;
-  }
-  h2 {
-    font-size: 3em;
-  }
-  h4 {
-    font-size: 2em;
-  }
-  h5 {
-    font-size: 1.5em;
-  }
   p {
     font-size: 0.75em;
   }

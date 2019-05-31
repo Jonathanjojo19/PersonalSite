@@ -14,7 +14,7 @@ class Intro extends React.Component {
                 id="intro"
             >
                 <div>
-                    <h5 className="white-text title">HELLO, ARE YOU LOOKING FOR ME? I AM</h5>
+                    <h5 className="white-text title">HELLO, I AM</h5>
                     {this.props.loading || 
                         <Typing hideCursor={true}> 
                             <Typing.Speed ms={10} />
@@ -37,7 +37,7 @@ class Intro extends React.Component {
                             offset={-60}
                             duration={1000}
                         >
-                            <span className="bold light-blue-text">KNOW MORE</span>    
+                            <span className="bold light-blue-text">EXPLORE ME</span>    
                         </Button>
                         <Button 
                             light

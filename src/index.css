@@ -203,6 +203,7 @@ body::-webkit-scrollbar {
 .draw {
 	-webkit-transition: color 0.25s;
 	transition: color 0.25s;
+	z-index: 5;
 }
 .draw::before, .draw::after {
 	-webkit-transition: all 0.2s linear;
@@ -222,6 +223,7 @@ body::-webkit-scrollbar {
 .draw:hover::before, .draw:hover::after {
 	height: 100%;
 	width: 100%;
+	z-index: -1;
 }
 .draw:hover::before {
 	border-top-color: #9EA8C7;

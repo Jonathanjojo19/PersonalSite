@@ -25,7 +25,7 @@ class ProjectCard extends React.Component {
         let link;
         if (this.props.gitrepo !== "") {
             link = 
-                <a href={this.props.gitrepo}>
+                <a href={this.props.gitrepo} target="_blank" rel="noopener noreferrer">
                     <img
                         src={gitLogo}
                         alt="Repo"

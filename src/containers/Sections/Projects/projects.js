@@ -8,7 +8,7 @@ const projects = [
             Using the MiniMax Algorithm with Alpha-Beta Pruning, the agent will come up with a move maximizing its success \
             even if the opponent is playing optimally. Not only our users get to fight a formidable foe, \
             they will also be indulged with the delicate UI and difficulty levels to satisfy our users eagerness to play. \
-            The live application can be accessed through https://reversai.netlify.", 
+            The live application can be accessed through https://reversai.netlify.com.", 
         dark: false
     },
     {

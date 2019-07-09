@@ -20,7 +20,7 @@ class Contacts extends React.Component {
                         Jonathan Christopher Jakub
                     </h3>
                     <div className="line-wrapped">
-                        <a href="https://linkedin.com/in/jonathan-christopher-jakub-aba556164/">
+                        <a href="https://linkedin.com/in/jonathan-christopher-jakub/">
                             <img
                                 src={linkedinLogo}
                                 alt="LinkedIn"

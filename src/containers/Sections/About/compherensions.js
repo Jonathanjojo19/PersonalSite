@@ -1,12 +1,12 @@
 const comprehensions = [
     'WEB DEVELOPMENT',
+    'ALGORITHMS',
+    'DATA STRUCTURES',
     'MICRO SERVICES',
     'INTELLIGENT SYSTEMS',
     'DESIGN PATTERNS',
-    'TDD',
-    'CI/CD',
-    'REFACTORING',
-    'COLLABORATIVE PROGRAMMING'
+    'DEPLOYMENT',
+    'REFACTORING'
 ];
 
 export default comprehensions;

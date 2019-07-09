@@ -1,8 +1,8 @@
 const experiences = [
     {
-      title:'Software Engineer Intern at STOQO', 
+      title:'Back End Software Engineer Intern at STOQO', 
       period:'June 2018 - Present',
-      content:'I was selected as an backend software developer intern at STOQO Company.'
+      content:'I was selected as an backend software developer intern at STOQO Tech Indonesia. Currently I am assigned to the Transport Team to assist them developing STOQO Transport Management System. I am also assigned to handle and manage data storage across STOQO services.'
     },
     {
       title:'IT-Dev Staff at UI’s Faculty of Computer Science Student Council', 

@@ -1,8 +1,8 @@
 const experiences = [
     {
-      title:'Back End Software Engineer Intern at STOQO', 
-      period:'June 2019 - Present',
-      content:'I was selected as an backend software developer intern at STOQO Tech Indonesia. Currently I am assigned to the Transport Team to assist them developing STOQO Transport Management System. I am also assigned to handle and manage data storage across STOQO services.'
+      title:'Back End Software Engineer Intern at STOQO Tech', 
+      period:'June 2019 - Aug 2019',
+      content:'I worked on the Transport Team - developing a new delivery method implementation to improve delivery timeliness and customer satisfaction. I also collaborated on its Driver Scheduler - delivering automated driver summaries and schedule information. During this period I also co-initiated its first data pipeline for analytics, having me performed some of the analytics as well.'
     },
     {
       title:'IT-Dev Staff at UI’s Faculty of Computer Science Student Council', 

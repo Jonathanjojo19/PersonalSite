@@ -1,5 +1,6 @@
 const tools = [
     'AWS',
+    'GCP',
     'DJANGO',
     'DJANGOREST',
     'REACTJS',
@@ -8,6 +9,7 @@ const tools = [
     'RAILS',
     'GIT',
     'JIRA',
+    'AIRFLOW',
     'ARCANIST'
 ];
 

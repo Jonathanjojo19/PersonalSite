@@ -10,9 +10,9 @@ const experiences = [
       content:'I worked as the back-end developer and responsible for integrating currently available apps with Line Bot. Later on, I was also assigned to design the backend APIs for another app made to collect and present files uploaded by students as references and study materials for other students.'
     },
     {
-      title:'Teaching Assistant (Programming Fundamentals with Python and Java)',
-      period:'Jan 2018 - May 2019', 
-      content:'I monitored a class of 55 students and tutored 13 of them personally. I have been in charge of monitoring the lab sessions and grading their works. I have been teaching students to comprehend Python and Java concepts of programming and general best practices.'
+      title:'CSUI Undergraduate Teaching Assistant',
+      period:'Jan 2018 - Present', 
+      content:'Four times I have monitored a class of 55 students and tutored 13 of them personally. I have been in charge of monitoring the lab sessions and grading their work. I have been teaching students to comprehend Python and Java concepts of programming, and Web Design and Development.'
     },
     {
       title:'Compfest X - GOJEK Software Engineering Academy Best Team’s Member',

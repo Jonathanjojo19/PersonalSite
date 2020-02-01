@@ -494,6 +494,7 @@ h6 {
 
 .content-text {
 	padding: 15px;
+	padding-left: 20px;
 	visibility: hidden;
 	opacity: 0;
 	overflow: auto;

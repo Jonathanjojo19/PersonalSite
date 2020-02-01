@@ -1,10 +1,11 @@
 const languages = [
     'PYTHON3',
+    'JAVASCRIPT',
+    'HTML',
+    'CSS',
     'JAVA',
-    'JS',
-    'HTML5',
-    'CSS4',
     'RUBY',
+    'PERL',
     'SQL',
     'MATLAB'
 ];
